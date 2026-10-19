@@ -1,17 +1,3 @@
-terraform {
-    required_version = ">= 1.0"
-    required_providers {
-        aws = {
-            source = "hashicorp/aws"
-            version = "~> 5.0"
-        }
-    }
-}
-
-provider "aws" {
-    region = var.aws_region 
-}
-
 # Security Group A (App Tier) - Depends on SG B
 resource "aws_security_group" "app_sg" {
     name = var.app_sg_name 

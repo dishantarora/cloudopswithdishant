@@ -1,7 +1,6 @@
 variable "aws_region" {
     type = string
     description = "AWS region for resources"
-    default = "us-east-1"
 }
 
 variable "app_sg_name" {
@@ -16,5 +15,5 @@ variable "db_sg_name" {
 
 variable "vpc_id" {
     type = string
-    default = "vpc-0123456789abcdef0"
+    description = "VPC ID from AWS account"
 }
